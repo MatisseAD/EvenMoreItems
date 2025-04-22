@@ -1,0 +1,6 @@
+items:
+  speedBoots:
+    name: "§ASpeed Boots"
+    description: "§7These boots increase your speed."
+    # IF YOU WANT TO USE A CUSTOM MODEL DATA, SPEED BOOTS MUST BE A LEATHER BOOTS WITH CUSTOM MODEL DATA 1
+    # CUSTOM MODEL DATA 1

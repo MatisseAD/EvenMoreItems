@@ -1,0 +1,10 @@
+name: MoreItems
+version: '1.0-SNAPSHOT'
+main: fr.jachou.moreItems.MoreItems
+api-version: '1.21'
+commands:
+  moreitems:
+    description: Command to open the MoreItems GUI
+    usage: /<command>
+    permission: moreitems.command
+    permission-message: You do not have permission to use this command.

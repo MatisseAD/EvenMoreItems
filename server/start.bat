@@ -1,0 +1,1 @@
+java -jar purpur-1.21.4-2416.jar nogui
