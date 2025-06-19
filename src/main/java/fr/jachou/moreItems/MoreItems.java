@@ -1,44 +1,50 @@
 package fr.jachou.moreItems;
 
-import fr.jachou.moreItems.managers.CommandManagers;
-import fr.jachou.moreItems.managers.EventManagers;
+import fr.jachou.moreItems.managers.CommandManager;
+import fr.jachou.moreItems.managers.EventManager;
+import fr.jachou.moreItems.managers.ItemManager;
+import fr.jachou.moreItems.managers.RecipeManager;
 import fr.jachou.moreItems.utils.Lang;
 import fr.jachou.moreItems.utils.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
+/**
+ * Main plugin entry point.
+ */
 public final class MoreItems extends JavaPlugin {
 
     private static MoreItems instance;
-    public static Lang lang;
+    private Lang lang;
+
+    public static MoreItems getInstance() {
+        return instance;
+    }
+
+    public Lang getLang() {
+        return lang;
+    }
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-        saveConfig();
-
-        // Initialize instance
+        saveDefaultConfig();
         instance = this;
 
-        // Initialize language
+        // language system
         lang = new Lang(this);
 
-        int pluginID = 25587;
-        Metrics metrics = new Metrics(this, pluginID);
+        // optional metrics
+        new Metrics(this, 25587);
 
-        // Register commands
-        CommandManagers.registerCommands(this);
+        // initialise managers
+        ItemManager.init(this);
+        RecipeManager.init(this);
 
-        // Register events
-        EventManagers.registerEvents(this);
-
+        CommandManager.register(this);
+        EventManager.register(this);
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
-    }
-
-    public static MoreItems getInstance() {
-        return instance;
+        // Nothing to clean up for now
     }
 }
