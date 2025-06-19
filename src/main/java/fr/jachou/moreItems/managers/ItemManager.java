@@ -1,7 +1,7 @@
 package fr.jachou.moreItems.managers;
 
 import fr.jachou.moreItems.items.CustomItem;
-import fr.jachou.moreItems.items.SpeedBoots;
+import fr.jachou.moreItems.items.*;
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.Plugin;
 
@@ -21,6 +21,15 @@ public final class ItemManager {
 
     public static void init(Plugin plugin) {
         register(new SpeedBoots(plugin));
+        register(new JumpBoots(plugin));
+        register(new FireSword(plugin));
+        register(new TeleportBow(plugin));
+        register(new MagnetPickaxe(plugin));
+        register(new HealthChestplate(plugin));
+        register(new XPHelmet(plugin));
+        register(new FrostWand(plugin));
+        register(new ExplosivePickaxe(plugin));
+        register(new LightningStick(plugin));
     }
 
     private static void register(CustomItem item) {

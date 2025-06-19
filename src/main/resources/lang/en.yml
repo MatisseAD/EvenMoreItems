@@ -4,3 +4,30 @@ items:
     description: "§7These boots increase your speed."
     # IF YOU WANT TO USE A CUSTOM MODEL DATA, SPEED BOOTS MUST BE A LEATHER BOOTS WITH CUSTOM MODEL DATA 1
     # CUSTOM MODEL DATA 1
+  jumpBoots:
+    name: "§aJump Boots"
+    description: "§7Increases your jump height."
+  fireSword:
+    name: "§cFire Sword"
+    description: "§7Sets mobs ablaze on hit."
+  teleportBow:
+    name: "§dTeleport Bow"
+    description: "§7Teleport where your arrow lands."
+  magnetPickaxe:
+    name: "§eMagnet Pickaxe"
+    description: "§7Drops go straight to your inventory."
+  healthChestplate:
+    name: "§cHealth Chestplate"
+    description: "§7Grants regeneration while worn."
+  xpHelmet:
+    name: "§bXP Helmet"
+    description: "§7Doubles experience gained."
+  frostWand:
+    name: "§bFrost Wand"
+    description: "§7Turns water into ice."
+  explosivePickaxe:
+    name: "§cExplosive Pickaxe"
+    description: "§7Creates explosions when mining."
+  lightningStick:
+    name: "§6Lightning Stick"
+    description: "§7Summons lightning where used."
