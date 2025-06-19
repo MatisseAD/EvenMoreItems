@@ -12,6 +12,6 @@ public final class CommandManager {
     }
 
     public static void register(Plugin plugin) {
-        plugin.getCommand("moreitems").setExecutor(new MoreItemsCommand());
+        plugin.getServer().getPluginCommand("moreitems").setExecutor(new MoreItemsCommand());
     }
 }

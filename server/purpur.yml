@@ -10,6 +10,7 @@
 
 verbose: false
 settings:
+  generate-end-void-rings: false
   messages:
     cannot-ride-mob: <red>You cannot mount that mob
     afk-broadcast-away: <yellow><italic>%s is now AFK
@@ -188,7 +189,7 @@ settings:
       distance: 0.5
     minecraft:magenta_bed:
       distance: 0.5
-config-version: 41
+config-version: 43
 world-settings:
   default:
     blocks:
@@ -235,13 +236,13 @@ world-settings:
       dragon_egg:
         teleport: true
       farmland:
-        bypass-mob-griefing: false
         gets-moist-from-below: false
         use-alpha-farmland: false
         disable-trampling: false
         only-players-trample: false
         feather-fall-distance-affects-trampling: false
         trample-height: -1.0
+        mob-griefing-override: default
       cactus:
         breaks-from-solid-neighbors: true
         affected-by-bonemeal: false
@@ -275,14 +276,14 @@ world-settings:
       sign:
         allow-colors: false
       powder_snow:
-        bypass-mob-griefing: false
+        mob-griefing-override: default
       turtle_egg:
         break-from-exp-orbs: false
         break-from-items: false
         break-from-minecarts: false
-        bypass-mob-griefing: false
         random-tick-crack-chance: 500
         feather-fall-distance-affects-trampling: false
+        mob-griefing-override: default
       powered-rail:
         activation-range: 8
       sponge:
@@ -641,6 +642,18 @@ world-settings:
             drops: {}
             into: minecraft:dirt_path
     mobs:
+      happy_ghast:
+        ridable-in-water: false
+        attributes:
+          max_health: 20.0
+          tempt_range: 16.0
+          flying_speed: 0.05
+          movement_speed: 0.05
+          follow_range: 16.0
+          camera_distance: 8.0
+          scale: 1.0
+        takes-damage-from-water: false
+        always-drop-exp: false
       chicken:
         ridable: false
         ridable-in-water: false
@@ -661,13 +674,13 @@ world-settings:
           scale: 1.0
         allow-griefing: true
         can-despawn-with-held-block: false
-        bypass-mob-griefing: false
         takes-damage-from-water: true
         aggressive-towards-endermites: true
         aggressive-towards-endermites-only-spawned-by-player-thrown-ender-pearls: false
         disable-player-stare-aggression: false
         ignore-projectiles: false
         always-drop-exp: false
+        mob-griefing-override: default
       axolotl:
         ridable: false
         controllable: true
@@ -727,9 +740,9 @@ world-settings:
         attributes:
           max_health: 24.0
           scale: 1.0
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         always-drop-exp: false
+        mob-griefing-override: default
       fox:
         ridable: false
         ridable-in-water: true
@@ -739,9 +752,9 @@ world-settings:
           scale: 1.0
         tulips-change-type: false
         breeding-delay-ticks: 6000
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         always-drop-exp: false
+        mob-griefing-override: default
       cave_spider:
         ridable: false
         ridable-in-water: true
@@ -860,9 +873,9 @@ world-settings:
         spawn-toast-chance: 0.0
         spawn-killer-rabbit-chance: 0.0
         breeding-delay-ticks: 6000
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         always-drop-exp: false
+        mob-griefing-override: default
       shulker:
         ridable: false
         ridable-in-water: true
@@ -888,9 +901,9 @@ world-settings:
           scale: 1.0
           movement_speed: 0.25
           attack_damage: 1.0
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         always-drop-exp: false
+        mob-griefing-override: default
       creeper:
         ridable: false
         ridable-in-water: true
@@ -900,13 +913,13 @@ world-settings:
           scale: 1.0
         naturally-charged-chance: 0.0
         allow-griefing: true
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         explode-when-killed: false
         health-impacts-explosion: false
         always-drop-exp: false
         head-visibility-percent: 0.5
         encircle-target: false
+        mob-griefing-override: default
       mule:
         ridable-in-water: false
         attributes:
@@ -1035,9 +1048,9 @@ world-settings:
           max_health: 8.0
           scale: 1.0
         breeding-delay-ticks: 6000
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         always-drop-exp: false
+        mob-griefing-override: default
       bogged:
         ridable: false
         ridable-in-water: true
@@ -1160,9 +1173,9 @@ world-settings:
         attributes:
           max_health: 24.0
           scale: 1.0
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         always-drop-exp: false
+        mob-griefing-override: default
       creaking:
         ridable: false
         ridable-in-water: true
@@ -1177,12 +1190,12 @@ world-settings:
         attributes:
           max_health: 16.0
           scale: 1.0
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         portal-spawn-modifier: 2000
         always-drop-exp: false
         head-visibility-percent: 0.5
         ignores-armor-with-gold-trim: false
+        mob-griefing-override: default
       dolphin:
         ridable: false
         controllable: true
@@ -1246,7 +1259,6 @@ world-settings:
         attributes:
           max_health: 100.0
           scale: 1.0
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         griefable-blocks:
         - minecraft:oak_leaves
@@ -1268,6 +1280,7 @@ world-settings:
         - minecraft:beetroots
         always-drop-exp: false
         avoid-rabbits: false
+        mob-griefing-override: default
       skeleton:
         ridable: false
         ridable-in-water: true
@@ -1310,10 +1323,10 @@ world-settings:
           chance: 0.05
           try-existing-chickens: true
         aggressive-towards-villager-when-lagging: true
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         always-drop-exp: false
         head-visibility-percent: 0.5
+        mob-griefing-override: default
       strider:
         ridable: false
         ridable-in-water: false
@@ -1349,7 +1362,6 @@ world-settings:
         breeding-delay-ticks: 6000
         clerics-farm-warts: false
         cleric-wart-farmers-throw-warts-at-villagers: true
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         allow-trading: true
         always-drop-exp: false
@@ -1365,6 +1377,7 @@ world-settings:
         search-radius:
           acquire-poi: 48
           nearest-bed-sensor: 48
+        mob-griefing-override: default
       vindicator:
         ridable: false
         ridable-in-water: true
@@ -1416,12 +1429,12 @@ world-settings:
           scale: 1.0
         health-regen-amount: 1.0
         health-regen-delay: 20
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         can-ride-vehicles: false
         explosion-radius: 1.0
         play-spawn-sound: true
         always-drop-exp: false
+        mob-griefing-override: default
       warden:
         ridable: false
         ridable-in-water: true
@@ -1463,9 +1476,9 @@ world-settings:
         max-shoot-interval-ticks: 20
         snow-ball-modifier: 10.0
         attack-distance: 1.25
-        bypass-mob-griefing: false
         takes-damage-from-water: true
         always-drop-exp: false
+        mob-griefing-override: default
       turtle:
         ridable: false
         ridable-in-water: true
@@ -1633,9 +1646,9 @@ world-settings:
         attributes:
           max_health: 200.0
         always-drop-full-exp: false
-        bypass-mob-griefing: false
         takes-damage-from-water: false
         can-ride-vehicles: false
+        mob-griefing-override: default
     ridable-settings:
       babies-are-ridable: true
       untamed-tamables-are-ridable: true
@@ -1776,9 +1789,6 @@ world-settings:
       raid-cooldown-seconds: 0
       animal-breeding-cooldown-seconds: 0
       persistent-droppable-entity-display-names: true
-      entities-pick-up-loot-bypass-mob-griefing: false
-      fireballs-bypass-mob-griefing: false
-      projectiles-bypass-mob-griefing: false
       note-block-ignore-above: false
       impose-teleport-restrictions-on-gateways: false
       impose-teleport-restrictions-on-nether-portals: false
@@ -1820,3 +1830,6 @@ world-settings:
           block-speed:
             grass_block: 0.3
             stone: 0.5
+      entities-pick-up-loot-mob-griefing-override: default
+      fireballs-mob-griefing-override: default
+      projectiles-mob-griefing-override: default

@@ -28,9 +28,9 @@ public class JumpBootsListener implements Listener {
                 boots.getItemMeta().getPersistentDataContainer().has(key, PersistentDataType.STRING);
 
         if (wearing) {
-            player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 40, 1, true, false));
-        } else if (player.hasPotionEffect(PotionEffectType.JUMP)) {
-            player.removePotionEffect(PotionEffectType.JUMP);
+            player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP_BOOST, 40, 1, true, false));
+        } else if (player.hasPotionEffect(PotionEffectType.JUMP_BOOST)) {
+            player.removePotionEffect(PotionEffectType.JUMP_BOOST);
         }
     }
 }
