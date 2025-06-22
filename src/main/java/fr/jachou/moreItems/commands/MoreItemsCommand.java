@@ -2,6 +2,7 @@ package fr.jachou.moreItems.commands;
 
 import fr.jachou.moreItems.managers.ItemManager;
 import fr.jachou.moreItems.items.CustomItem;
+import fr.jachou.moreItems.gui.ManagerGUI;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -20,6 +21,10 @@ public class MoreItemsCommand implements CommandExecutor {
             return true;
         }
 
+        if (args.length == 0 || args[0].equalsIgnoreCase("gui")) {
+            ManagerGUI.open(player);
+            return true;
+        }
         if (args.length < 2 || !args[0].equalsIgnoreCase("get")) {
             player.sendMessage("Usage: /moreitems get <id>");
             return true;

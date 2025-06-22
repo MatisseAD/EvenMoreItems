@@ -22,5 +22,17 @@ public final class EventManager {
         plugin.getServer().getPluginManager().registerEvents(new FrostWandListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new ExplosivePickaxeListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new LightningStickListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new SandWandListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new ManagerGUIListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new LeatherPouchListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new GrappleArrowListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new MasonHammerListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new FishingNetListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new PocketBellListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new SurvivalRationListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new DriedAppleListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new CampfireStickListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new ReturnScrollListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new IcePopListener(), plugin);
     }
 }

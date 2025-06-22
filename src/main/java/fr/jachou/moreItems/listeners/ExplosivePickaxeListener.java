@@ -10,9 +10,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
 
-/**
- * Creates a small explosion when breaking blocks with the pickaxe.
- */
+
 public class ExplosivePickaxeListener implements Listener {
 
     private final NamespacedKey key = new NamespacedKey(MoreItems.getInstance(), ExplosivePickaxe.KEY_ID);
@@ -22,7 +20,7 @@ public class ExplosivePickaxeListener implements Listener {
         Player player = event.getPlayer();
         ItemStack item = player.getInventory().getItemInMainHand();
         if (item.hasItemMeta() && item.getItemMeta().getPersistentDataContainer().has(key, PersistentDataType.STRING)) {
-            player.getWorld().createExplosion(event.getBlock().getLocation(), 2f, false, false, player);
+            player.getWorld().createExplosion(event.getBlock().getLocation(), 2f, false, true, player);
         }
     }
 }

@@ -30,6 +30,17 @@ public final class ItemManager {
         register(new FrostWand(plugin));
         register(new ExplosivePickaxe(plugin));
         register(new LightningStick(plugin));
+        register(new SandWand(plugin));
+        register(new LeatherPouch(plugin));
+        register(new GrappleArrow(plugin));
+        register(new MasonHammer(plugin));
+        register(new FishingNet(plugin));
+        register(new PocketBell(plugin));
+        register(new SurvivalRation(plugin));
+        register(new DriedApple(plugin));
+        register(new CampfireStick(plugin));
+        register(new ReturnScroll(plugin));
+        register(new IcePop(plugin));
     }
 
     private static void register(CustomItem item) {
