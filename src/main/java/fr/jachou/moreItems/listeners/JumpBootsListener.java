@@ -31,6 +31,9 @@ public class JumpBootsListener implements Listener {
             player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 40, 1, true, false));
         } else if (player.hasPotionEffect(PotionEffectType.JUMP)) {
             player.removePotionEffect(PotionEffectType.JUMP);
+            player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP_BOOST, 40, 1, true, false));
+        } else if (player.hasPotionEffect(PotionEffectType.JUMP_BOOST)) {
+            player.removePotionEffect(PotionEffectType.JUMP_BOOST);
         }
     }
 }

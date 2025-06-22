@@ -25,7 +25,6 @@ public class MoreItemsCommand implements CommandExecutor {
             ManagerGUI.open(player);
             return true;
         }
-
         if (args.length < 2 || !args[0].equalsIgnoreCase("get")) {
             player.sendMessage("Usage: /moreitems get <id>");
             return true;

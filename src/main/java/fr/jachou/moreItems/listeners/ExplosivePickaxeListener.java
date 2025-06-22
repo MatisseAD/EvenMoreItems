@@ -10,9 +10,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
 
-/**
- * Breaks surrounding blocks by triggering an explosion when a block is mined with the pickaxe.
- */
+
 public class ExplosivePickaxeListener implements Listener {
 
     private final NamespacedKey key = new NamespacedKey(MoreItems.getInstance(), ExplosivePickaxe.KEY_ID);
