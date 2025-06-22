@@ -30,8 +30,10 @@ public class Lang {
         }
         YamlConfiguration config = YamlConfiguration.loadConfiguration(langFile);
         messages.clear();
-        for (String key: config.getKeys(false)) {
-            messages.put(key, config.getString(key));
+        for (String key : config.getKeys(true)) {
+            if (config.isString(key)) {
+                messages.put(key, config.getString(key));
+            }
         }
     }
 

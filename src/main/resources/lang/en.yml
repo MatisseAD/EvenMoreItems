@@ -4,3 +4,63 @@ items:
     description: "§7These boots increase your speed."
     # IF YOU WANT TO USE A CUSTOM MODEL DATA, SPEED BOOTS MUST BE A LEATHER BOOTS WITH CUSTOM MODEL DATA 1
     # CUSTOM MODEL DATA 1
+  jumpBoots:
+    name: "§aJump Boots"
+    description: "§7Increases your jump height."
+  fireSword:
+    name: "§cFire Sword"
+    description: "§7Sets mobs ablaze on hit."
+  teleportBow:
+    name: "§dTeleport Bow"
+    description: "§7Teleport where your arrow lands."
+  magnetPickaxe:
+    name: "§eMagnet Pickaxe"
+    description: "§7Drops go straight to your inventory."
+  healthChestplate:
+    name: "§cHealth Chestplate"
+    description: "§7Grants regeneration while worn."
+  xpHelmet:
+    name: "§bXP Helmet"
+    description: "§7Doubles experience gained."
+  frostWand:
+    name: "§bFrost Wand"
+    description: "§7Turns water into ice."
+  explosivePickaxe:
+    name: "§cExplosive Pickaxe"
+    description: "§7Creates explosions when mining."
+  lightningStick:
+    name: "§6Lightning Stick"
+    description: "§7Summons lightning where used."
+  sandWand:
+    name: "§eSand Wand"
+    description: "§7Turns blocks into sand."
+  leatherPouch:
+    name: "§6Leather Pouch"
+    description: "§7Stores up to 64 emeralds. Sneak to withdraw."
+  grappleArrow:
+    name: "§aGrapple Arrow"
+    description: "§7Pulls you to where it lands."
+  masonHammer:
+    name: "§7Mason Hammer"
+    description: "§7Polish stone blocks on use."
+  fishingNet:
+    name: "§bFishing Net"
+    description: "§7Throw into water to catch fish."
+  pocketBell:
+    name: "§ePocket Bell"
+    description: "§7Reveals nearby raiders."
+  survivalRation:
+    name: "§6Survival Ration"
+    description: "§7Instantly restores hunger."
+  driedApple:
+    name: "§aDried Apple"
+    description: "§72 hunger snack."
+  campfireStick:
+    name: "§eCampfire Stick"
+    description: "§7Places a campfire where used."
+  returnScroll:
+    name: "§dReturn Scroll"
+    description: "§7Teleport to your bed."
+  icePop:
+    name: "§bIce Pop"
+    description: "§7Heals but slows you."
