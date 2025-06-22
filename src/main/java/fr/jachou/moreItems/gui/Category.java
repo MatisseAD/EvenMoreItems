@@ -1,23 +1,23 @@
 package fr.jachou.moreItems.gui;
 
-import org.bukkit.ChatColor;
+import fr.jachou.moreItems.MoreItems;
 
 /**
  * Simple item categories for GUI organisation.
  */
 public enum Category {
-    ARMOR(ChatColor.AQUA + "Armure"),
-    WEAPON(ChatColor.RED + "Armes"),
-    TOOL(ChatColor.GOLD + "Outils"),
-    UTILITY(ChatColor.GREEN + "Divers");
+    ARMOR("categories.ARMOR"),
+    WEAPON("categories.WEAPON"),
+    TOOL("categories.TOOL"),
+    UTILITY("categories.UTILITY");
 
-    private final String display;
+    private final String key;
 
-    Category(String display) {
-        this.display = display;
+    Category(String key) {
+        this.key = key;
     }
 
     public String getDisplay() {
-        return display;
+        return MoreItems.getInstance().getLang().get(key);
     }
 }

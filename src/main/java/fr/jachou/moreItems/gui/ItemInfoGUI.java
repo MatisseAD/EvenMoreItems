@@ -39,6 +39,11 @@ public class ItemInfoGUI {
         }
         event.setCancelled(true);
         Player player = (Player) event.getWhoClicked();
+        if (event.getSlot() == 13) {
+            player.getInventory().addItem(holder.item().getItem());
+            player.sendMessage(ChatColor.GREEN + "Item given!");
+            return true;
+        }
         if (event.getSlot() == 22) {
             RecipeGUI.open(player, holder.item());
             return true;
