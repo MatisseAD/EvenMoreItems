@@ -30,7 +30,7 @@ public class RecipeEditorGUI {
     }
 
     public static void open(Player player, CustomItem item) {
-        Inventory inv = Bukkit.createInventory(new Holder(item), 27, ChatColor.GREEN + "Edit Craft");
+        Inventory inv = Bukkit.createInventory(new Holder(item), 36, ChatColor.GREEN + "Edit Craft");
         ShapedRecipe recipe = RecipeManager.get(item);
         if (recipe != null) {
             String[] shape = recipe.getShape();

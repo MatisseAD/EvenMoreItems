@@ -25,7 +25,7 @@ public class RecipeGUI {
     }
 
     public static void open(Player player, CustomItem item) {
-        Inventory inv = Bukkit.createInventory(new Holder(item), 27, TITLE);
+        Inventory inv = Bukkit.createInventory(new Holder(item), 36, TITLE);
         ShapedRecipe recipe = RecipeManager.get(item);
         if (recipe != null) {
             String[] shape = recipe.getShape();

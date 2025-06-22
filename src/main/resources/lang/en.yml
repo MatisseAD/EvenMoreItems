@@ -64,3 +64,8 @@ items:
   icePop:
     name: "§bIce Pop"
     description: "§7Heals but slows you."
+categories:
+  ARMOR: "§bArmor"
+  WEAPON: "§cWeapons"
+  TOOL: "§6Tools"
+  UTILITY: "§aUtility"
