@@ -43,6 +43,13 @@ public final class ItemManager {
         register(new CampfireStick(plugin), Category.TOOL);
         register(new ReturnScroll(plugin), Category.UTILITY);
         register(new IcePop(plugin), Category.UTILITY);
+        register(new PickupMagnet(plugin), Category.UTILITY);
+        register(new PortableFurnace(plugin), Category.UTILITY);
+        register(new PortableAnvil(plugin), Category.TOOL);
+        register(new InvisibilityHood(plugin), Category.ARMOR);
+        register(new PortalBook(plugin), Category.UTILITY);
+        register(new AlchemyBackpack(plugin), Category.UTILITY);
+        register(new SelectiveDynamite(plugin), Category.TOOL);
     }
 
     private static void register(CustomItem item, Category category) {

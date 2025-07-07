@@ -34,5 +34,12 @@ public final class EventManager {
         plugin.getServer().getPluginManager().registerEvents(new CampfireStickListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new ReturnScrollListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new IcePopListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new PickupMagnetListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new PortableFurnaceListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new PortableAnvilListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new InvisibilityHoodListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new PortalBookListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new AlchemyBackpackListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new SelectiveDynamiteListener(), plugin);
     }
 }
