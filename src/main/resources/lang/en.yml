@@ -64,6 +64,27 @@ items:
   icePop:
     name: "§bIce Pop"
     description: "§7Heals but slows you."
+  pickupMagnet:
+    name: "§ePickup Magnet"
+    description: "§7Collect nearby drops on use."
+  portableFurnace:
+    name: "§6Portable Furnace"
+    description: "§7Opens a furnace wherever you are."
+  portableAnvil:
+    name: "§7Portable Anvil"
+    description: "§7Repair items without placing an anvil."
+  invisibilityHood:
+    name: "§fInvisibility Hood"
+    description: "§7Makes you invisible while worn."
+  portalBook:
+    name: "§dPortal Book"
+    description: "§7Set an anchor with sneak-use, teleport on use."
+  alchemyBackpack:
+    name: "§5Alchemy Backpack"
+    description: "§7Small pouch to store potions."
+  selectiveDynamite:
+    name: "§cSelective Dynamite"
+    description: "§7Explodes only chosen blocks."
 categories:
   ARMOR: "§bArmor"
   WEAPON: "§cWeapons"
