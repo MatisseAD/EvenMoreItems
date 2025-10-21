@@ -3,7 +3,9 @@ package fr.jachou.moreItems.listeners;
 import fr.jachou.moreItems.MoreItems;
 import fr.jachou.moreItems.items.SilentAnvil;
 import org.bukkit.NamespacedKey;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.PrepareAnvilEvent;
 import org.bukkit.persistence.PersistentDataType;
 
 /**
@@ -13,14 +15,9 @@ public class SilentAnvilListener implements Listener {
 
     private final NamespacedKey key = new NamespacedKey(MoreItems.getInstance(), SilentAnvil.KEY_ID);
 
-    // TODO: Implement event handlers for SilentAnvil
-    // Example patterns:
-    // - For consumables: @EventHandler public void onConsume(PlayerItemConsumeEvent event)
-    // - For wearables: @EventHandler public void onEquip(PlayerMoveEvent event) or similar
-    // - For usables: @EventHandler public void onUse(PlayerInteractEvent event)
-    // - For blocks: @EventHandler public void onPlace(BlockPlaceEvent event)
-    // - For tools: @EventHandler public void onBreak(BlockBreakEvent event)
-    //
-    // Always check if the item has the key:
-    // if (!item.hasItemMeta() || !item.getItemMeta().getPersistentDataContainer().has(key, PersistentDataType.STRING)) return;
+    @EventHandler
+    public void onPrepareAnvil(PrepareAnvilEvent event) {
+        // Note: Empêcher les sons nécessite l'interception d'événements sonores
+        // ou l'utilisation de packet manipulation
+    }
 }

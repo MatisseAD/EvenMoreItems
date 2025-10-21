@@ -2,8 +2,14 @@ package fr.jachou.moreItems.listeners;
 
 import fr.jachou.moreItems.MoreItems;
 import fr.jachou.moreItems.items.AutoTrapdoor;
+import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+import org.bukkit.block.Block;
+import org.bukkit.block.data.Openable;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.persistence.PersistentDataType;
 
 /**
@@ -13,14 +19,23 @@ public class AutoTrapdoorListener implements Listener {
 
     private final NamespacedKey key = new NamespacedKey(MoreItems.getInstance(), AutoTrapdoor.KEY_ID);
 
-    // TODO: Implement event handlers for AutoTrapdoor
-    // Example patterns:
-    // - For consumables: @EventHandler public void onConsume(PlayerItemConsumeEvent event)
-    // - For wearables: @EventHandler public void onEquip(PlayerMoveEvent event) or similar
-    // - For usables: @EventHandler public void onUse(PlayerInteractEvent event)
-    // - For blocks: @EventHandler public void onPlace(BlockPlaceEvent event)
-    // - For tools: @EventHandler public void onBreak(BlockBreakEvent event)
-    //
-    // Always check if the item has the key:
-    // if (!item.hasItemMeta() || !item.getItemMeta().getPersistentDataContainer().has(key, PersistentDataType.STRING)) return;
+    @EventHandler
+    public void onMove(PlayerMoveEvent event) {
+        Player player = event.getPlayer();
+        Block below = player.getLocation().subtract(0, 1, 0).getBlock();
+        Block above = player.getLocation().add(0, 1, 0).getBlock();
+        
+        // Vérifier les trappes proches
+        for (Block block : new Block[]{below, above}) {
+            if (block.getType().name().contains("TRAPDOOR") && 
+                block.getBlockData() instanceof Openable openable) {
+                
+                // Ouvrir si joueur proche
+                if (player.getLocation().distance(block.getLocation()) < 2) {
+                    openable.setOpen(true);
+                    block.setBlockData(openable);
+                }
+            }
+        }
+    }
 }
