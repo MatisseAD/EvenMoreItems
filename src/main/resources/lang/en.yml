@@ -85,6 +85,252 @@ items:
   selectiveDynamite:
     name: "§cSelective Dynamite"
     description: "§7Explodes only chosen blocks."
+  tempered_obsidian_pickaxe:
+    name: "§5Tempered Obsidian Pickaxe"
+    description: "§7Triple durability, slow but unbreakable."
+  reinforced_bow:
+    name: "§bReinforced Bow"
+    description: "§7+25% range."
+  stone_hammer:
+    name: "§7Stone Hammer"
+    description: "§7Breaks 3x3 stone blocks."
+  miner_shovel:
+    name: "§eMiner's Shovel"
+    description: "§7Double speed in dirt/sand."
+  hunter_knife:
+    name: "§6Hunter's Knife"
+    description: "§7Doubles animal loot."
+  lumberjack_axe:
+    name: "§aLumberjack's Axe"
+    description: "§7Cuts entire trees."
+  fast_pickaxe:
+    name: "§eFast Pickaxe"
+    description: "§7Temporary efficiency boost."
+  reflective_shield:
+    name: "§9Reflective Shield"
+    description: "§7Reflects arrows and tridents."
+  hunter_spear:
+    name: "§7Hunter's Spear"
+    description: "§7Short-range attack weapon."
+  auto_fishing_rod:
+    name: "§bAutomatic Fishing Rod"
+    description: "§7Brings fish back faster."
+  power_glove:
+    name: "§cPower Glove"
+    description: "§7Instantly breaks weak blocks."
+  gravity_boots:
+    name: "§fGravity Boots"
+    description: "§7Negates fall damage."
+  foliage_axe:
+    name: "§aFoliage Axe"
+    description: "§7Instantly cuts leaves."
+  miner_glove:
+    name: "§6Miner's Glove"
+    description: "§7Auto-collects broken blocks."
+  sailor_trident:
+    name: "§bSailor's Trident"
+    description: "§7Increases underwater speed."
+  kitchen_knife:
+    name: "§7Kitchen Knife"
+    description: "§7Cuts raw food without a furnace."
+  breath_stick:
+    name: "§fBreath Stick"
+    description: "§7Pushes nearby mobs away."
+  reinforced_glass:
+    name: "§bReinforced Glass"
+    description: "§7TNT resistant."
+  carved_stone:
+    name: "§7Carved Stone"
+    description: "§7Ancient face appearance."
+  code_chest:
+    name: "§6Code Chest"
+    description: "§7Password-lockable chest."
+  oil_lamp:
+    name: "§eOil Lamp"
+    description: "§7Portable light source."
+  secret_door:
+    name: "§5Secret Door"
+    description: "§7Invisible when closed."
+  advanced_cartography_table:
+    name: "§9Advanced Cartography Table"
+    description: "§7Copy maps without ink."
+  smoke_block:
+    name: "§7Smoke Block"
+    description: "§7Hides vision, decorative effect."
+  mossy_brick:
+    name: "§aMossy Brick"
+    description: "§7Natural decoration."
+  cracked_glowstone:
+    name: "§eCracked Glowstone"
+    description: "§7Decorative variant."
+  trapped_flame_chest:
+    name: "§cTrapped Flame Chest"
+    description: "§7Explodes when opened."
+  mirror_block:
+    name: "§fMirror Block"
+    description: "§7Reflects light."
+  runic_floor:
+    name: "§dRunic Floor"
+    description: "§7Multiplies speed."
+  ivy_wall:
+    name: "§aIvy Wall"
+    description: "§7Vegetated wall."
+  ice_brick:
+    name: "§bIce Brick"
+    description: "§7Never melts."
+  improved_forge_table:
+    name: "§7Improved Forge Table"
+    description: "§7Allows special crafts."
+  silent_anvil:
+    name: "§7Silent Anvil"
+    description: "§7No noise when using."
+  luminous_colored_glass:
+    name: "§9Luminous Colored Glass"
+    description: "§7Tinted glass + glow."
+  will_o_wisp_block:
+    name: "§bWill-o-Wisp Block"
+    description: "§7Emits weak blue light."
+  auto_trapdoor:
+    name: "§7Auto Trapdoor"
+    description: "§7Opens on player presence."
+  engraving_table:
+    name: "§6Engraving Table"
+    description: "§7Rename decorative blocks."
+  steak_sandwich:
+    name: "§6Steak Sandwich"
+    description: "§7Restores 8 hunger points."
+  energy_soup:
+    name: "§eEnergy Soup"
+    description: "§7Regeneration + speed."
+  sweet_pumpkin_pie:
+    name: "§6Sweet Pumpkin Pie"
+    description: "§7Feeds and gives speed."
+  hunter_stew:
+    name: "§7Hunter's Stew"
+    description: "§7Temporary strength."
+  feather_falling_potion_2:
+    name: "§bFeather Falling Potion II"
+    description: "§7Lasts 4 minutes."
+  honey_milk:
+    name: "§eHoney Milk"
+    description: "§7Heals and gives resistance."
+  caramel_apple:
+    name: "§6Caramel Apple"
+    description: "§7Instantly restores health."
+  magic_melon_juice:
+    name: "§aMagic Melon Juice"
+    description: "§7Fast regeneration."
+  lava_stew:
+    name: "§cLava Stew"
+    description: "§7Fire resistance."
+  village_bread:
+    name: "§eBread of Village"
+    description: "§7Feeds 2x more."
+  sea_soup:
+    name: "§bSea Soup"
+    description: "§7Water breathing."
+  plains_tea:
+    name: "§ePlains Tea"
+    description: "§7Slight regeneration."
+  spicy_honey:
+    name: "§6Spicy Honey"
+    description: "§7Restores hunger over time."
+  pumpkin_beer:
+    name: "§ePumpkin Beer"
+    description: "§7Strength + blur."
+  golem_soup:
+    name: "§7Golem's Soup"
+    description: "§7Temporary absorption."
+  smart_dispenser:
+    name: "§9Smart Dispenser"
+    description: "§7Automatically sorts items."
+  sorting_chest:
+    name: "§6Sorting Chest"
+    description: "§7Sorts items by type."
+  water_extractor:
+    name: "§bWater Extractor"
+    description: "§7Automatically produces water buckets."
+  double_furnace:
+    name: "§7Double Furnace"
+    description: "§7Smelts 2x faster."
+  basic_windmill:
+    name: "§eBasic Windmill"
+    description: "§7Produces redstone by wind (aesthetic)."
+  block_compressor:
+    name: "§7Block Compressor"
+    description: "§7Auto-merges blocks (e.g. 9 ingots → 1 block)."
+  auto_harvester:
+    name: "§aAuto Harvester"
+    description: "§7Breaks and replants."
+  honey_extractor:
+    name: "§eHoney Extractor"
+    description: "§7Harvests without breaking the hive."
+  compact_forge:
+    name: "§cCompact Forge"
+    description: "§7Smelts metals without coal (with lava)."
+  wheat_silo:
+    name: "§6Wheat Silo"
+    description: "§7Stores harvests."
+  redstone_elevator:
+    name: "§cRedstone Elevator"
+    description: "§7Auto ascends/descends."
+  auto_double_door:
+    name: "§7Auto Double Door"
+    description: "§7Opens on player detection."
+  enchanted_book_sorter:
+    name: "§5Enchanted Book Sorter"
+    description: "§7Sorts by enchantment."
+  auto_lamppost:
+    name: "§eLamppost"
+    description: "§7Lights up at night."
+  security_trapdoor:
+    name: "§7Security Trapdoor"
+    description: "§7Closes if mob approaches."
+  fire_ring:
+    name: "§cFire Ring"
+    description: "§7Fire resistance."
+  wind_cape:
+    name: "§fWind Cape"
+    description: "§7Speed + jump boost."
+  life_amulet:
+    name: "§cLife Amulet"
+    description: "§7Restores 1 heart every 30s."
+  lightness_boots:
+    name: "§fLightness Boots"
+    description: "§7Reduces fall damage."
+  night_vision_ring:
+    name: "§5Night Vision Ring"
+    description: "§7Permanent night vision."
+  golem_talisman:
+    name: "§7Golem's Talisman"
+    description: "§7Increased resistance."
+  sailor_medallion:
+    name: "§bSailor's Medallion"
+    description: "§7Water breathing."
+  chameleon_cape:
+    name: "§aChameleon Cape"
+    description: "§710s invisibility."
+  short_teleport_stick:
+    name: "§dShort Teleport Stick"
+    description: "§7TP 10 blocks."
+  alpha_wolf_collar:
+    name: "§6Alpha Wolf Collar"
+    description: "§7All nearby wolves follow and attack."
+  phantom_lantern:
+    name: "§5Phantom Lantern"
+    description: "§7Reveals invisible entities."
+  sun_talisman:
+    name: "§eSun Talisman"
+    description: "§7Removes rain."
+  miner_bracelet:
+    name: "§6Miner's Bracelet"
+    description: "§7Increases mining speed."
+  nether_ring:
+    name: "§cNether Ring"
+    description: "§75s fire immunity after portal passage."
+  ender_compass:
+    name: "§dEnder Compass"
+    description: "§7Points to stronghold."
 categories:
   ARMOR: "§bArmor"
   WEAPON: "§cWeapons"

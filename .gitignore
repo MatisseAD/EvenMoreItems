@@ -109,5 +109,8 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 .flattened-pom.xml
 
+# Javac temporary files
+javac.*.args
+
 # Common working directory
 run/

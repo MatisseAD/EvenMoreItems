@@ -50,6 +50,98 @@ public final class ItemManager {
         register(new PortalBook(plugin), Category.UTILITY);
         register(new AlchemyBackpack(plugin), Category.UTILITY);
         register(new SelectiveDynamite(plugin), Category.TOOL);
+        
+        // Minecraft++ Vanilla Expansion - Category 1: Tools & Weapons
+        register(new TemperedObsidianPickaxe(plugin), Category.TOOL);
+        register(new ReinforcedBow(plugin), Category.WEAPON);
+        register(new StoneHammer(plugin), Category.TOOL);
+        register(new MinerShovel(plugin), Category.TOOL);
+        register(new HunterKnife(plugin), Category.WEAPON);
+        register(new LumberjackAxe(plugin), Category.TOOL);
+        register(new FastPickaxe(plugin), Category.TOOL);
+        register(new ReflectiveShield(plugin), Category.ARMOR);
+        register(new HunterSpear(plugin), Category.WEAPON);
+        register(new AutoFishingRod(plugin), Category.TOOL);
+        register(new PowerGlove(plugin), Category.UTILITY);
+        register(new GravityBoots(plugin), Category.ARMOR);
+        register(new FoliageAxe(plugin), Category.TOOL);
+        register(new MinerGlove(plugin), Category.UTILITY);
+        register(new SailorTrident(plugin), Category.WEAPON);
+        register(new KitchenKnife(plugin), Category.UTILITY);
+        register(new BreathStick(plugin), Category.WEAPON);
+        
+        // Category 2: Functional & Decorative Blocks
+        register(new ReinforcedGlass(plugin), Category.UTILITY);
+        register(new CarvedStone(plugin), Category.UTILITY);
+        register(new CodeChest(plugin), Category.UTILITY);
+        register(new OilLamp(plugin), Category.UTILITY);
+        register(new SecretDoor(plugin), Category.UTILITY);
+        register(new AdvancedCartographyTable(plugin), Category.UTILITY);
+        register(new SmokeBlock(plugin), Category.UTILITY);
+        register(new MossyBrick(plugin), Category.UTILITY);
+        register(new CrackedGlowstone(plugin), Category.UTILITY);
+        register(new TrappedFlameChest(plugin), Category.UTILITY);
+        register(new MirrorBlock(plugin), Category.UTILITY);
+        register(new RunicFloor(plugin), Category.UTILITY);
+        register(new IvyWall(plugin), Category.UTILITY);
+        register(new IceBrick(plugin), Category.UTILITY);
+        register(new ImprovedForgeTable(plugin), Category.UTILITY);
+        register(new SilentAnvil(plugin), Category.UTILITY);
+        register(new LuminousColoredGlass(plugin), Category.UTILITY);
+        register(new WillOWispBlock(plugin), Category.UTILITY);
+        register(new AutoTrapdoor(plugin), Category.UTILITY);
+        register(new EngravingTable(plugin), Category.UTILITY);
+        
+        // Category 3: Food & Potions
+        register(new SteakSandwich(plugin), Category.UTILITY);
+        register(new EnergySoup(plugin), Category.UTILITY);
+        register(new SweetPumpkinPie(plugin), Category.UTILITY);
+        register(new HunterStew(plugin), Category.UTILITY);
+        register(new FeatherFallingPotionII(plugin), Category.UTILITY);
+        register(new HoneyMilk(plugin), Category.UTILITY);
+        register(new CaramelApple(plugin), Category.UTILITY);
+        register(new MagicMelonJuice(plugin), Category.UTILITY);
+        register(new LavaStew(plugin), Category.UTILITY);
+        register(new VillageBread(plugin), Category.UTILITY);
+        register(new SeaSoup(plugin), Category.UTILITY);
+        register(new PlainsTea(plugin), Category.UTILITY);
+        register(new SpicyHoney(plugin), Category.UTILITY);
+        register(new PumpkinBeer(plugin), Category.UTILITY);
+        register(new GolemSoup(plugin), Category.UTILITY);
+        
+        // Category 4: Machines & Redstone
+        register(new SmartDispenser(plugin), Category.UTILITY);
+        register(new SortingChest(plugin), Category.UTILITY);
+        register(new WaterExtractor(plugin), Category.UTILITY);
+        register(new DoubleFurnace(plugin), Category.UTILITY);
+        register(new BasicWindmill(plugin), Category.UTILITY);
+        register(new BlockCompressor(plugin), Category.UTILITY);
+        register(new AutoHarvester(plugin), Category.UTILITY);
+        register(new HoneyExtractor(plugin), Category.UTILITY);
+        register(new CompactForge(plugin), Category.UTILITY);
+        register(new WheatSilo(plugin), Category.UTILITY);
+        register(new RedstoneElevator(plugin), Category.UTILITY);
+        register(new AutoDoubleDoor(plugin), Category.UTILITY);
+        register(new EnchantedBookSorter(plugin), Category.UTILITY);
+        register(new AutoLamppost(plugin), Category.UTILITY);
+        register(new SecurityTrapdoor(plugin), Category.UTILITY);
+        
+        // Category 5: Artifacts & Special Objects
+        register(new FireRing(plugin), Category.UTILITY);
+        register(new WindCape(plugin), Category.ARMOR);
+        register(new LifeAmulet(plugin), Category.UTILITY);
+        register(new LightnessBoots(plugin), Category.ARMOR);
+        register(new NightVisionRing(plugin), Category.UTILITY);
+        register(new GolemTalisman(plugin), Category.UTILITY);
+        register(new SailorMedallion(plugin), Category.UTILITY);
+        register(new ChameleonCape(plugin), Category.ARMOR);
+        register(new ShortTeleportStick(plugin), Category.UTILITY);
+        register(new AlphaWolfCollar(plugin), Category.UTILITY);
+        register(new PhantomLantern(plugin), Category.UTILITY);
+        register(new SunTalisman(plugin), Category.UTILITY);
+        register(new MinerBracelet(plugin), Category.UTILITY);
+        register(new NetherRing(plugin), Category.UTILITY);
+        register(new EnderCompass(plugin), Category.UTILITY);
     }
 
     private static void register(CustomItem item, Category category) {
